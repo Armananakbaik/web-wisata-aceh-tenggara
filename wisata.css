@@ -1,0 +1,110 @@
+/* CSS untuk Halaman Detail Destinasi */
+
+body {
+  font-family: "Inter", "Poppins", Arial, Helvetica, sans-serif;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #dbeafe, #eff6ff); /* Gradien yang lebih lembut untuk latar belakang */
+  color: #2c3e50;
+}
+
+/* Container untuk destinasi */
+section {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 40px;
+  background: linear-gradient(135deg, #ffffff, #f9fafb);
+  border-radius: 20px;
+  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+/* Styling untuk gambar destinasi */
+section img {
+  float: left;
+  width: 50%;
+  margin-right: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  height: auto;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+section img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.3);
+}
+
+/* Styling untuk judul dan deskripsi destinasi */
+section h2 {
+  font-family: "Merriweather", serif;
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #1c4b82;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1.2px;
+  border-bottom: 3px solid #4285f4;
+  padding-bottom: 12px;
+}
+
+section p {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: #4a4a4a;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  text-align: justify;
+}
+
+/* Styling untuk tombol kembali */
+button.kembali {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(90deg, #0077ff, #0056d0);
+  color: white;
+  padding: 12px 35px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 25px;
+  transition: all 0.4s ease;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+button.kembali:hover {
+  background: linear-gradient(90deg, #0056d0, #0039a5);
+  transform: translateY(-4px);
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Media Query untuk responsif di layar kecil */
+@media screen and (max-width: 768px) {
+  section img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+    float: none;
+  }
+
+  section {
+    padding: 25px;
+  }
+
+  section h2 {
+    font-size: 10px;
+  }
+
+  section p {
+    font-size: 10px;
+  }
+
+  button.kembali {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+}
